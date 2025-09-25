@@ -5,9 +5,8 @@
 
 int main(int argc, char *argv[]) {
 	int a;
-	printf(" input the second : ");
+	printf("input the year : ");
 	scanf("%d", &a);
-	printf(" the time is %d : %d", a/60, a%60);
-
+	printf(" is the year %d the leap year? : %d\n",a, (a%4 == 0 && a%100!=0) || a%400==0);
 	return 0;
 }
